@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فضفضة - تكلم براحتك</title>
+    <link rel="stylesheet" href="fadfadcss.css">
+</head>
+<body>
+    <div class="container">
+        <button class="theme-toggle" onclick="toggleTheme()" title="تبديل الوضع">🌙</button>
+        
+        <div class="header">
+            <h1>💜 فضفضة 💜</h1>
+            <p class="subtitle">
+                <span class="emoji-decoration">✨</span>
+                اكتبي اللي في بالك بدون خوف وبسرية تامة
+                <span class="emoji-decoration">✨</span>
+            </p>
+        </div>
+
+        <div class="form-section">
+            <div class="input-wrapper">
+                <textarea 
+                    id="message" 
+                    placeholder="فضفضي يا بعدهم كلهم... هنا مساحتك الآمنة 🌸"
+                    maxlength="2000"
+                    oninput="updateCharCount()"
+                ></textarea>
+                <div class="char-count" id="charCount">0 / 2000 حرف</div>
+            </div>
+
+            <button id="sendBtn" onclick="sendMessage()">
+                <span id="btnText">📨 إرسال الفضفضة</span>
+            </button>
+
+            <div class="success-message" id="successMessage">
+                ✅ تم إرسال فضفضتك بنجاح! شكراً لثقتك 💙
+            </div>
+
+            <div class="error-message" id="errorMessage">
+          
+            </div>
+
+            <div class="info-box">
+                <p>✍️ ارسلي وانتِ مطمئنة البال يا حلوة</p>
+                <div class="privacy-badge">
+                    🔒 محمية بالكامل وسرية 100%
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- مكتبات Firebase - آخر إصدار -->
+    <script src="https://www.gstatic.com/firebasejs/11.1.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/11.1.0/firebase-database-compat.js"></script>
+    
+    <!-- ملف إعدادات Firebase -->
+    <script src="fadfadfir.js"></script>
+    
+    <!-- ملف JavaScript الرئيسي -->
+    <script src="fadfad.js"></script>
+</body>
+</html>
